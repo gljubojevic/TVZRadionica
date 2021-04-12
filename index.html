@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Minus5 - TvZ Radionica</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/league.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="img/imgLogoWhite.svg" data-background-size="300px" data-background-position="bottom left">
+					<h2>Kako razvijamo software</h2>
+					<p>@ <a target="_blank" href="https://minus5.hr">https://minus5.hr</a></p>
+				</section>
+
+				<section>
+					<h3>Organizacija</h3>
+					<p>Minus5 ima 7 neovisnih timova</p>
+					<ol>
+						<li class="fragment">Sportsbook</li>
+						<li class="fragment">Players</li>
+						<li class="fragment">Community</li>
+						<li class="fragment">Marketing</li>
+						<li class="fragment">Data science</li>
+						<li class="fragment">DevOps</li>
+						<li class="fragment">Design</li>
+					</ol>
+					<aside class="notes">TODO: notes</aside>
+				</section>
+
+				<section>
+					<h3>Zajedničke smjernice sve timove</h3>
+					<ul>
+						<li class="fragment">Dugotrajan fokus na produkt</li>
+						<li class="fragment">Samostalan razvoj i održavanje produkta</li>
+						<li class="fragment">Konstantno unaprijeđenje produkta
+							<ul>
+								<li>Za korsnike</li>
+								<li>Tehnički i tehnološki</li>
+							</ul>
+						</li>
+						<li class="fragment">Proširenje suradnje s drugim timovima</li>
+					</ul>
+					<aside class="notes">TODO: notes</aside>
+				</section>
+
+				<section>
+					<h3>Struktura tima</h3>
+					<ul>
+						<li class="fragment">Product manager</li>
+						<li class="fragment">Backend developers</li>
+						<li class="fragment">Frontend developers</li>
+						<li class="fragment">iOS/Android developers</li>
+					</ul>
+					<aside class="notes">TODO: notes</aside>
+				</section>
+
+				<section>
+					<h3>Specifični timovi</h3>
+					<p>Sepcifični timovi su podrška i samostalni</p>
+					<ul>
+						<li class="fragment">Data science - analiza i modeli</li>
+						<li class="fragment">DevOps - podrška razvoju i produkcija</li>
+						<li class="fragment">Design - dizajn za sva sučelja</li>
+					</ul>
+					<aside class="notes">TODO: notes</aside>
+				</section>
+
+				<section>
+					<h3>Alati koje koristimo za razvoj i suradnju</h3>
+					<ul>
+						<li class="fragment">Slack <a target="_blank" href="https://slack.com/">https://slack.com/</a></li>
+						<li class="fragment">BaseCamp <a target="_blank" href="https://basecamp.com/">https://basecamp.com/</a></li>
+						<li class="fragment">GitHub <a target="_blank" href="https://github.com/">https://github.com/</a></li>
+						<li class="fragment">Razvojna okolina</li>
+					</ul>
+					<aside class="notes">TODO: notes</aside>
+				</section>
+
+				<section>
+					<section>
+						<h2>Slack - <a target="_blank" href="https://slack.com/">https://slack.com/</a></h2>
+						<p>koristimo za</p>
+						<ul>
+							<li>brzu i direktnu komunikaciju</li>
+							<li>notifikacije iz produkcije</li>
+							<li>direktnu suradnju u rješavanju problema</li>
+						</ul>
+					</section>
+					<section>
+						<h2>BaseCamp - <a target="_blank" href="https://basecamp.com/">https://basecamp.com/</a></h2>
+						<p>namjenjen je za sve projetke i produkte sadrži</p>
+						<ul>
+							<li>Opise projekta</li>
+							<li>Dokumentaciju za projekt</li>
+							<li>Zadatke u projektu</li>
+						</ul>
+						<small>BaseCamp je alat za suradnju a manje za pregled stausa projekta</small>
+						<small>projekti na basecamp-u žive kraće od produkata</small>
+					</section>
+					<section>
+						<h2>GitHub <a target="_blank" href="https://github.com/">https://github.com/</a></h2>
+						<p>je centar svemira za developere i sadrži</p>
+						<ul>
+							<li>source code od svih servisa i aplikacija</li>
+							<li>source code infrastrukture (infrastructure as code)</li>
+							<li>opise servisa i komponenti</li>
+						</ul>
+					</section>
+					<section>
+						<h2>GitHub <a target="_blank" href="https://github.com/">https://github.com/</a></h2>
+						<ul>
+							<li>omogućuje suradnju unutar i među timovima</li>
+							<li>timovi koje imamo su preslikani u GitHub timove</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>Smjernice za developere</h3>
+						<p>Svaki servis i aplikacija se mora</p>
+						<ul>
+							<li>moći pustiti u produkciju u bilo kojem trenutku</li>
+							<li>moći vratiti na prethodnu verziju u slučaju problema</li>
+							<li>imati automatizirane testove</li>
+						</ul>
+					</section>
+						<section>
+						<p>Ove smjerince ponekad zahtjevaju pažljivo planiranje razvoja</p>
+						<ul>
+							<li>koliko traje pokretanje aplikacije</li>
+							<li>kako ne kreirati zastoje</li>
+							<li>kako modelirati podatke i komunikaciju</li>
+							<li>kako znamo da ne radi dobro ili postoji problem</li>
+						</ul>
+					</section>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				slideNumber: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

@@ -16,8 +16,18 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-background-image="img/imgLogoWhite.svg" data-background-size="300px" data-background-position="bottom left">
-					<h2>Kako razvijamo software</h2>
+				<!-- 
+				<section
+					data-background-iframe="https://www.shadertoy.com/embed/4tc3WB?gui=true&t=10&paused=false&muted=false">
+					<h1>Kako razvijamo software</h1>
+					<p>@ <a target="_blank" href="https://minus5.hr">https://minus5.hr</a></p>
+				</section>
+				-->
+				<section 
+					data-background-image="img/imgLogoWhite.svg"
+					data-background-size="300px" 
+					data-background-position="bottom left">
+					<h1>Kako razvijamo software</h1>
 					<p>@ <a target="_blank" href="https://minus5.hr">https://minus5.hr</a></p>
 				</section>
 
@@ -75,17 +85,16 @@
 				</section>
 
 				<section>
-					<h3>Alati koje koristimo za razvoj i suradnju</h3>
-					<ul>
-						<li class="fragment">Slack <a target="_blank" href="https://slack.com/">https://slack.com/</a></li>
-						<li class="fragment">BaseCamp <a target="_blank" href="https://basecamp.com/">https://basecamp.com/</a></li>
-						<li class="fragment">GitHub <a target="_blank" href="https://github.com/">https://github.com/</a></li>
-						<li class="fragment">Razvojna okolina</li>
-					</ul>
-					<aside class="notes">TODO: notes</aside>
-				</section>
-
-				<section>
+					<section>
+						<h3>Alati koje koristimo za razvoj i suradnju</h3>
+						<ul>
+							<li class="fragment">Slack <a target="_blank" href="https://slack.com/">https://slack.com/</a></li>
+							<li class="fragment">BaseCamp <a target="_blank" href="https://basecamp.com/">https://basecamp.com/</a></li>
+							<li class="fragment">GitHub <a target="_blank" href="https://github.com/">https://github.com/</a></li>
+							<li class="fragment">Razvojna okolina</li>
+						</ul>
+						<aside class="notes">TODO: notes</aside>
+					</section>
 					<section>
 						<h2>Slack - <a target="_blank" href="https://slack.com/">https://slack.com/</a></h2>
 						<p>koristimo za</p>
@@ -113,14 +122,18 @@
 							<li>source code od svih servisa i aplikacija</li>
 							<li>source code infrastrukture (infrastructure as code)</li>
 							<li>opise servisa i komponenti</li>
-						</ul>
-					</section>
-					<section>
-						<h2>GitHub <a target="_blank" href="https://github.com/">https://github.com/</a></h2>
-						<ul>
 							<li>omogućuje suradnju unutar i među timovima</li>
 							<li>timovi koje imamo su preslikani u GitHub timove</li>
 						</ul>
+					</section>
+					<section>
+						<h2>Razvojna okolina</h2>
+						<p>Ako svi imaju istu razvojnu okolinu, onda možemo</p>
+						<ul>
+							<li>brzo uključiti nove ljude</li>
+							<li>spojiti različite timove i olakšati suradnju</li>
+						</ul>
+						<p>Naša razvojna okolina je par alata i skripte koje povlače source i omogućuju lako pokretanje</p>
 					</section>
 				</section>
 
@@ -143,6 +156,84 @@
 							<li>kako znamo da ne radi dobro ili postoji problem</li>
 						</ul>
 					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>Što savjetovati mlađim ljudima?</h3>
+						<ul>
+							<li>Koristie neki SCM (Git, Svn, Marcurial...)</li>
+							<li>Code koji pišete, pišete za ljude</li>
+							<li>Pišite testove za code</li>
+							<li>"Posudite" od najboljih</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Koristie neki SCM...</h2>
+						<p class="fragment grow">Da čak i kad radite sami :)</p>
+						<p class="fragment">Kad pišete "commit" poruku odgovarajte na pitanje:<br/>"Ovaj commit će?"</p>
+						<p class="fragment">U opis commit poruke opišite<br/>"zašto nešto mijenjate ili dodajete"</p>
+						<small class="fragment">
+							<a target="_blank" href="https://chris.beams.io/posts/git-commit/">https://chris.beams.io/posts/git-commit/</a>
+							<a target="_blank" href="https://https://git-scm.com/book/en/v2">https://git-scm.com/book/en/v2</a>
+						</small>
+					</section>
+					<section>
+						<h2>Još malo o SCM-u</h2>
+						<p>Nikad ne radite commit ako se code ne compile-a</p>
+						<p>Nastojite raditi commit barem jednom dnevno</p>
+						<p>Test coverage ne smije pasti sa commitom</p>
+					</section>
+					<section>
+						<h2>Code koji pišete, pišete za ljude</h2>
+						<p class="fragment">Vaš code će najviše čitati i pokušati razumjeti ljudi</p>
+						<p class="fragment">Vodite računa o nazivima varijabli, modula, funkcija...</p>
+						<p class="fragment">Nemojte nikad biti zadovoljni, uvijek može bolje</p>
+						<p class="fragment">Gotovo svaki komadić ćete napisati i barem 3x promijeniti</p>
+					</section>
+					<section>
+						<h2>Pišite testove za code</h2>
+						<p class="fragment">Naknade promjene su najčešći uzrok bugova,<br/> testovi pomažu!</p>
+						<p class="fragment">Počnite pisati code sa failing testom</p>
+						<p class="fragment">Testovi su dokumentacija i pokazuju<br/>kako nešto radi ili se koristi</p>
+						<small class="fragment">
+							<a target="_blank" href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship-dp-0132350882/dp/0132350882/ref=mt_other?_encoding=UTF8&me=&qid=">Clean Code: A Handbook of Agile Software Craftsmanship</a><br>
+							<a target="_blank" href="https://www.youtube.com/results?search_query=uncle+bob+martin">https://www.youtube.com/results?search_query=uncle+bob+martin</a>
+						</small>
+					</section>
+					<section>
+						<h2>"Posudite" od najboljih</h2>
+						<p>Uvijek gledajte kako bolji rješavaju probleme</p>
+						<p>"Posudite" i pobojšajte rješenje</p>
+						<p>NE "posuđujte" ako ne razumijete točno kako radi</p>
+					</section>
+					<section>
+						<h2>Još malo knjiga...</h2>
+						<p>
+							<a target="_blank" href="https://https://git-scm.com/book/en/v2">https://git-scm.com/book/en/v2</a><br/>
+							<a target="_blank" href="https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/">O'Reilly - Designing Data-Intensive Applications</a><br/>
+							<a target="_blank" href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship-dp-0132350882/dp/0132350882/ref=mt_other?_encoding=UTF8&me=&qid=">Clean Code:<br/>A Handbook of Agile Software Craftsmanship</a><br/>
+							<a target="_blank" href="https://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers-dp-0137081073/dp/0137081073/ref=mt_other?_encoding=UTF8&me=&qid=">The Clean Coder:<br/> A Code of Conduct for Professional Programmers</a><br/>
+						</p>
+					</section>
+					<section>
+						<h2>Još malo tečajeva...</h2>
+						<p>
+							<a target="_blank" href="https://www.coursera.org/learn/algorithms-part1">https://www.coursera.org/learn/algorithms-part1</a>
+							<a target="_blank" href="https://www.coursera.org/learn/algorithms-part2">https://www.coursera.org/learn/algorithms-part2</a>
+						</p>
+					</section>
+				</section>
+
+				<section data-background-image="img/imgLogoWhite.svg" data-background-size="300px" data-background-position="bottom left">
+					<h1>Hvala!</h1>
+					<iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/MdX3Rr?gui=true&t=10&paused=false&muted=false" allowfullscreen></iframe>
+					<!-- 
+					<iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/tlX3WH?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
+					<iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/Xl2XRW?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
+					<iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/4tc3WB?gui=true&t=10&paused=false&muted=false" allowfullscreen></iframe>
+					-->
+					<p><a href="mailto:goran.ljubojevic@minus5.hr">goran.ljubojevic@minus5.hr</a></p>
 				</section>
 
 			</div>
